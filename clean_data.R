@@ -5,6 +5,7 @@ library(data.table)
 library(dplyr)
 library(tidyr)
 
+
 # read in data
 intl_confirmed = fread("data/time_series_covid19_confirmed_global.csv", stringsAsFactors = F)
 intl_confirmed = intl_confirmed %>% select(-Lat, -Long)
@@ -40,12 +41,14 @@ deaths = deaths %>% mutate(Date = as.Date(Date, format = "%m/%d/%y"))
 confirmed = confirmed %>%
   mutate(Country = ifelse(State == "Hong Kong", "Hong Kong", Country),
          Country = ifelse(Country == "Taiwan*", "Taiwan", Country),
-         Country = ifelse(Country == "US", "United States", Country))
+         Country = ifelse(Country == "US", "United States", Country),
+         Country = ifelse(Country == "Korea, South", "South Korea", Country))
 
 deaths = deaths %>%
   mutate(Country = ifelse(State == "Hong Kong", "Hong Kong", Country),
          Country = ifelse(Country == "Taiwan*", "Taiwan", Country),
-         Country = ifelse(Country == "US", "United States", Country))
+         Country = ifelse(Country == "US", "United States", Country),
+         Country = ifelse(Country == "Korea, South", "South Korea", Country))
 
 fwrite(confirmed, '../covid19-Django/trends/data/confirmed_cases.csv')
 fwrite(deaths, '../covid19-Django/trends/data/num_deaths.csv')

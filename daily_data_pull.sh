@@ -17,8 +17,9 @@ Rscript clean_data.R
 
 cd ../covid19-Django
 
-git add trends/data/confirmed_cases.csv
-git add trends/data/num_death.csv
+# git add trends/data/confirmed_cases.csv
+# git add trends/data/num_death.csv
+git add -A
 git commit -m "refresh with today's data"
 git push origin master
 git push heroku master
