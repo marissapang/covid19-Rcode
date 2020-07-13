@@ -22,10 +22,11 @@ joined_data = confirmed %>%
   left_join(deaths, by="Country") %>%
   left_join(gdp_pc, by="Country") %>%
   left_join(country_abbrevs, by="Country") %>%
-  #filter(Num_Confirmed > 5000) %>%
-  filter(Num_Confirmed > 15000) %>%
+  # filter(Num_Confirmed > 5000) %>%
+  filter(Num_Confirmed > 10000) %>%
   mutate(Death_Rate = round(Num_Deaths/Num_Confirmed,3)*100) %>%
-  arrange(desc(Death_Rate))
+  arrange(desc(Death_Rate)) # %>%
+  # mutate(Country_Abbr = ifelse(Num_Confirmed > 20000, Country_Abbr, ' '))
 
 # plot(joined_data$GDP_Per_Capita, joined_data$Dath_Rate)
 fwrite(joined_data, '../covid19-Django/trends/data/death_rate.csv')

@@ -1,47 +1,47 @@
-Country, Country_Abbr
-United States,US
-Spain,Sp
-Italy,It
-France,Fr
-Germany,Ge
-United Kingdom,UK
-Turkey,TU
-Iran,IR
-China,CHN
-Russia,RU
-Brazil,BR
-Belgium,BE
-Canada,CA
-Netherlands,DU
-Switzerland,SZ
-India,IN
-Czechia, CZ
-Portugal,PG
-Ecuador,EC
-Peru,PE
-Ireland,IR
-Sweden,SW
-Saudi Arabia,SB
-Austria,AS
-Israel,IS
-Japan,JP
-Chile,CH
-Singapore,SG
-Pakistan, PM
-Mexico,MX
-Poland,PO
-South Korea,DK
-Romania,RO
-United Arab Emirates, UA
-Belarus, BL
-Qatar, QA
-Denmark, DE
-Indonesia, ID
-Ukraine, UR
-Norway, NO
-Philippines, PH
-Australia, AU
-Serbia, SE
-Dominican Republic, DR
-Malaysia,MA
-Panama,PM
+Country, Country_Abbr, Continent
+United States,US, Americas
+Spain,Sp, Europe
+Italy,It, Europe
+France,Fr, Europe
+Germany,GE, Europe
+United Kingdom,UK, Europe
+Turkey,Tu, Europe
+Iran,Ir, Middle East
+China,Cn, Asia Pacific
+Russia,Ru, Europe
+Brazil,Br, Americas
+Belgium,Be, Europe
+Canada,Ca, Americas
+Netherlands,Du, Europe
+Switzerland,Sz, Europe
+India,In, Asia Pacific
+Czechia, Cz, Europe
+Portugal,Pg, Europe
+Ecuador,Ec, Americas
+Peru,Pe, Americas
+Ireland,Ir, Europe
+Sweden,Sw, Europe
+Saudi Arabia,Sb, Middle East
+Austria,As, Europe
+Israel,Is, Middle East
+Japan,Jp, Japan
+Chile,Ch, Americas
+Singapore,Sg, Asia Pacific
+Pakistan, Pk, Asia Pacific
+Mexico,Mx, Americas
+Poland,Po, Europe
+South Korea,Sk, Asia Pacific
+Romania,Ro, Europe
+United Arab Emirates, UA, Middle East
+Belarus, Bl, Europe
+Qatar, Qa, Middle East
+Denmark, De, Europe
+Indonesia, Id, Asia Pacific
+Ukraine, Ur, Europe
+Norway, No, Europe
+Philippines, Ph, Asia Pacific
+Australia, Au, Asia Pacific
+Serbia, Se, Europe
+Dominican Republic, Dr, Americas
+Malaysia,Ma, Asia Pacific
+Panama,Pm, Americas
